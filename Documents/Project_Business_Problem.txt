@@ -1,0 +1,126 @@
+Project Title:
+Customer Churn & Retention Analytics + GenAI
+
+Business Problem:
+A telecom company is losing customers due to churn.
+The company wants to understand which customers are leaving,
+why they are leaving, and which customers are at high risk of churn.
+
+Business Objective:
+The goal of this project is to analyze customer behavior,
+identify the main churn drivers, find high-risk customer segments,
+and provide retention recommendations to management.
+
+Why This Project Is Needed:
+Customer churn reduces revenue and increases customer acquisition costs.
+By identifying churn patterns early, the company can take targeted
+retention actions and improve customer loyalty.
+
+Expected Outcome:
+1. Identify churn rate.
+2. Find major churn drivers.
+3. Identify high-risk customer groups.
+4. Compare churn across contract types, services, tenure, and charges.
+5. Build a Power BI dashboard for management.
+6. Build a GenAI assistant that can answer churn-related business questions.
+7. Suggest retention actions based on the analysis.
+
+
+Key Stakeholders:
+
+1. Customer Retention Manager
+   - Wants to identify customers who are likely to leave.
+   - Needs high-risk customer segments for retention campaigns.
+
+2. Marketing Manager
+   - Wants to understand which customer groups respond better to offers.
+   - Needs insights for targeted promotions and loyalty programs.
+
+3. Customer Service Manager
+   - Wants to identify service-related issues that may cause churn.
+   - Needs information about complaints, service usage, and customer behavior.
+
+4. Finance / Revenue Manager
+   - Wants to understand the revenue impact of customer churn.
+   - Needs to identify valuable customers who are at risk of leaving.
+
+5. Senior Management
+   - Wants a high-level view of churn rate, major churn drivers,
+     high-risk segments, and recommended retention actions.
+
+
+Dataset Understanding:
+
+Customer Identifier:
+- customerID: Unique ID of each telecom customer.
+
+Customer Profile:
+- gender: Customer gender.
+- SeniorCitizen: Indicates whether the customer is a senior citizen.
+- Partner: Whether the customer has a partner.
+- Dependents: Whether the customer has dependents.
+- tenure: Number of months the customer has stayed with the company.
+
+Telecom Services:
+- PhoneService
+- MultipleLines
+- InternetService
+- OnlineSecurity
+- OnlineBackup
+- DeviceProtection
+- TechSupport
+- StreamingTV
+- StreamingMovies
+
+These fields describe which telecom services the customer is using.
+
+Contract & Billing:
+- Contract: Month-to-month, one-year, or two-year contract.
+- PaperlessBilling: Whether paperless billing is enabled.
+- PaymentMethod: Customer payment method.
+
+Financial Metrics:
+- MonthlyCharges: Monthly amount charged to the customer.
+- TotalCharges: Total amount charged during the customer relationship.
+
+Target Variable:
+- Churn: Indicates whether the customer left the company.
+
+
+
+Project Architecture:
+
+1. Raw Dataset
+   - Telco Customer Churn CSV
+   - Contains customer profile, services, contract, billing, charges, and churn status.
+
+2. Python / Jupyter Notebook
+   - Load the raw CSV.
+   - Check missing values and duplicates.
+   - Fix data types.
+   - Clean TotalCharges.
+   - Create business features.
+   - Perform churn-focused EDA.
+   - Export a cleaned dataset.
+
+3. PostgreSQL
+   - Load the cleaned churn dataset into PostgreSQL.
+   - Run business-focused SQL queries.
+   - Analyze churn by contract, tenure, services, payment method, and charges.
+
+4. Power BI
+   - Connect Power BI to PostgreSQL.
+   - Build a clean data model.
+   - Create DAX measures for churn and retention KPIs.
+   - Build management dashboards.
+
+5. GenAI
+   - Connect the cleaned churn data / analysis outputs to a GenAI assistant.
+   - Allow users to ask churn-related business questions in natural language.
+   - Generate retention recommendations and management summaries.
+
+6. Final Business Output
+   - Identify major churn drivers.
+   - Identify high-risk customer segments.
+   - Recommend retention actions.
+   - Present insights through Power BI and GenAI.

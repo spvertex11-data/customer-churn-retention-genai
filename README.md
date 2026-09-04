@@ -2,6 +2,22 @@
 
 An end-to-end telecom customer churn analytics project using Python, PostgreSQL, Power BI, and Gemini GenAI.
 
+
+# Project Architecture PNG 
+
+<img width="1536" height="1024" alt="ChatGPT Image Sep 4, 2026, 11_02_10 AM" src="https://github.com/user-attachments/assets/2cfdd53d-95b6-476e-8add-f12e8c8c9e35" />
+
+# Dashbord PNG
+
+NO : 1(CHURN) <img width="1195" height="675" alt="Churn" src="https://github.com/user-attachments/assets/aa592073-29f7-43c9-a461-a2c4abf3808f" />
+
+NO : 2(CHURN DRIVES) <img width="1202" height="676" alt="Churn_Drives" src="https://github.com/user-attachments/assets/268cd82c-8274-4183-ae9b-b910059ff98f" />
+
+NO : 3(CUSTOMER RISK) <img width="1201" height="675" alt="Customers_risk" src="https://github.com/user-attachments/assets/fe095a08-bd78-4a43-b54b-ffb90c805ce5" />
+
+NO : 4(RELATIONSHIP) <img width="1256" height="572" alt="Relationship" src="https://github.com/user-attachments/assets/7f8058d1-180f-416c-8e3b-e61df809f7ff" />
+
+
 ## Project Objective
 
 The objective of this project is to analyze customer churn, identify high-risk customer segments, measure revenue impact, and provide actionable retention recommendations.
